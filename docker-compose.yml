@@ -1,0 +1,8 @@
+services:
+  mental-app:
+    build: ./client
+    container_name: mental-app
+    ports:
+      - 8080:8080
+    volumes:
+      - ./data.json:/app/dist/data.json
